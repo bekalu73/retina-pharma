@@ -1,0 +1,112 @@
+.header {
+  background-color: #171325;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header__container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 5%;
+  margin-left: 5%;
+  align-items: center;
+  padding: 20px;
+  background-color: #242033;
+  color: white;
+}
+.header__logo {
+  background-color: rgb(228, 174, 73);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.header__logo img {
+  width: 150px;
+  object-fit: contain;
+}
+/* .header__links {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+} */
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: max-height 0.3s ease;
+}
+.header__links a:not(.header__links-contact) {
+  position: relative;
+  /* color: white; */
+  text-decoration: none;
+  padding: 10px 0;
+}
+.header__links a:not(.header__links-contact):after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.5s ease;
+}
+
+.header__links a:not(.header__links-contact):hover::after {
+  width: 100%;
+}
+
+.header__hamburger {
+  display: none;
+  cursor: pointer;
+}
+.header__links--open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  background-color: #242033;
+  z-index: 1;
+}
+.header__links-contact {
+  background: rgb(63, 8, 99);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 8, 99, 0.6194852941176471) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  padding: 5px 10px;
+  border-radius: 5px;
+  /* color: #242033; */
+}
+
+/* media query */
+@media (max-width: 768px) {
+  .header__links {
+    display: none;
+    flex-direction: column;
+    max-height: 0;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .header__hamburger {
+    display: block;
+  }
+
+  .header__links--open {
+    display: flex;
+    max-height: 500px; /* Adjust as needed */
+  }
+
+  .header__links a {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #444;
+  }
+}
