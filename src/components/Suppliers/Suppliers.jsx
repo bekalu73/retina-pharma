@@ -14,37 +14,37 @@ function Suppliers() {
         <div className="suppliers__img--item">
           <img
             src="https://retina-pharma.com/wp-content/uploads/2015/05/roche.jpg"
-            alt=""
+            alt="Roche"
           />
         </div>
         <div className="suppliers__img--item">
           <img
             src="https://retina-pharma.com/wp-content/uploads/2015/05/keeler.jpg"
-            alt=""
+            alt="Keeler"
           />
         </div>
         <div className="suppliers__img--item">
           <img
             src="https://retina-pharma.com/wp-content/uploads/2015/05/quantel.jpg"
-            alt=""
+            alt="Quantel"
           />
         </div>
         <div className="suppliers__img--item">
           <img
             src="https://retina-pharma.com/wp-content/uploads/2015/05/elga.jpg"
-            alt=""
+            alt="Elga"
           />
         </div>
         <div className="suppliers__img--item">
           <img
             src="https://retina-pharma.com/wp-content/uploads/2015/05/evoqua.jpg"
-            alt=""
+            alt="Evoqua"
           />
         </div>
         <div className="suppliers__img--item">
           <img
             src="https://retina-pharma.com/wp-content/uploads/2015/05/omni.jpg"
-            alt=""
+            alt="Omni"
           />
         </div>
       </div>

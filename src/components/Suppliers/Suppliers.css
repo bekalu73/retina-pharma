@@ -69,7 +69,7 @@
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 780px) {
   .supplier__title {
     font-size: 2rem;
   }
