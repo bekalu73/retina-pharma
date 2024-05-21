@@ -1,0 +1,56 @@
+/* ISO.css */
+.certified {
+  background: rgb(63, 8, 99);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 8, 99, 0.6) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  padding: 50px 0;
+}
+
+.certified__container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certified-item {
+  display: flex;
+  align-items: center;
+  padding: 30px 25px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  color: rgb(63, 8, 99);
+  font-size: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certified-item svg {
+  font-size: 40px;
+  margin-right: 15px;
+  color: red;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .certified__container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .certified-item {
+    margin-bottom: 20px;
+  }
+}
