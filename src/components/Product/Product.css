@@ -63,14 +63,16 @@
 
 .product__item:hover {
   transform: translateY(-10px);
+  transition: ease-out 0.3s;
 }
 
 /* Image styles */
 .product__img img {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   margin-bottom: 20px;
+  border-radius: 50%;
 }
 
 /* Title styles */
