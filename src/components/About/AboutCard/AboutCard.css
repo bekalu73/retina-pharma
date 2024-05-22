@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  background-color: #171325;
 }
 
 /* Container for the content */
@@ -14,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff;
 }
 
 /* Header styles */
@@ -23,65 +25,56 @@
 }
 
 .aboutCards__header h2 {
-  font-size: 2.5rem;
-  color: #171325;
+  font-size: 3rem;
+  color: #c84200;
   margin-bottom: 10px;
 }
 
 .aboutCards__header p {
   font-size: 1.2rem;
-  color: #555;
+  color: #ddd;
 }
 
 /* aboutCard item container */
 .aboutCard__container--item {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   width: 100%;
 }
 
 /* Individual aboutCard item */
 .aboutCard__item {
-  background: rgb(63, 8, 99);
-  background: linear-gradient(
-    90deg,
-    rgba(63, 8, 99, 0.6194852941176471) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 20px;
-  transition: transform 0.3s;
+  background: #28243c;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .aboutCard__item:hover {
   transform: translateY(-10px);
-  transition: ease-out 0.3s;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Image styles */
-.aboutCard__img img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
+/* Icon styles */
+.aboutCard__img {
+  font-size: 3rem;
+  color: #c84200;
   margin-bottom: 20px;
-  border-radius: 50%;
 }
 
 /* Title styles */
 .aboutCard__title {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: #171325;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #c84200;
   margin-bottom: 10px;
-  font-weight: 600;
 }
 
 /* List styles */
@@ -96,14 +89,14 @@
 .aboutCard__list li {
   margin-bottom: 10px;
   color: #f4ecec;
-  font-size: 0.9rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
 }
 
 .aboutCard__list li svg {
   margin-right: 10px;
-  color: #171325;
+  color: #c84200;
 }
 
 /* Button styles */
@@ -126,7 +119,7 @@
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .aboutCards__header h2 {
     font-size: 2rem;
   }
@@ -136,14 +129,36 @@
   }
 
   .aboutCard__title {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .aboutCard__list li {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .aboutCard__btn {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutCards__header h2 {
+    font-size: 2rem;
+  }
+
+  .aboutCards__header p {
+    font-size: 0.9rem;
+  }
+
+  .aboutCard__title {
+    font-size: 1.5rem;
+  }
+
+  .aboutCard__list li {
+    font-size: 1rem;
+  }
+
+  .aboutCard__btn {
+    font-size: 0.8rem;
   }
 }
