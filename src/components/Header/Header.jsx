@@ -22,7 +22,7 @@ function Header() {
           <Link to="#" onClick={handleLinkClick} className="underlined">
             Home
           </Link>
-          <Link to="#" onClick={handleLinkClick} className="underlined">
+          <Link to="/about" onClick={handleLinkClick} className="underlined">
             About
           </Link>
           <Link to="#" onClick={handleLinkClick} className="underlined">
