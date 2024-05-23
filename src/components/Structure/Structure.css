@@ -1,0 +1,94 @@
+/* Container for the entire structure section */
+.structure {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff; /* Interchanged background color */
+  color: #171325; /* Interchanged text color */
+}
+
+/* Container for the content */
+.structure__container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4; /* Slightly different background for contrast */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.structure__container h1 {
+  font-size: 2.5rem;
+  color: #c84200; /* Primary color for header */
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.structure__container h1::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: #c84200;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Structure item container */
+.structure__container--item {
+  width: 100%;
+}
+
+/* Title styles for sections */
+.structure__container--item h2 {
+  font-size: 1.8rem;
+  color: #c84200;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Paragraph styles */
+.structure__container--item p {
+  font-size: 1.1rem;
+  color: #555; /* Slightly darker text for readability */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .structure__container h1 {
+    font-size: 2rem;
+  }
+
+  .structure__container--item h2 {
+    font-size: 1.5rem;
+  }
+
+  .structure__container--item p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .structure__container h1 {
+    font-size: 1.5rem;
+  }
+
+  .structure__container--item h2 {
+    font-size: 1.2rem;
+  }
+
+  .structure__container--item p {
+    font-size: 0.9rem;
+  }
+}

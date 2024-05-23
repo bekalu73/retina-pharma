@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -21,7 +22,9 @@ function About() {
             of high-tech medical equipment throughout the country.
           </p>
         </div>
-        <div className="about__btn">Read More</div>
+        <Link to="/about" className="about__btn">
+          Read More
+        </Link>
       </div>
     </div>
   );

@@ -14,11 +14,11 @@ function Footer() {
           </Link>
         </div>
         <div className="footer__container--links">
-          <Link to="#">Home</Link>
-          <Link to="#">About</Link>
-          <Link to="#">Customers</Link>
-          <Link to="#">Technical Support</Link>
-          <Link className="header__links-contact" to="#">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/customers">Customers</Link>
+          <Link to="/support">Technical Support</Link>
+          <Link className="header__links-contact" to="/contact">
             Contact Us
           </Link>
         </div>

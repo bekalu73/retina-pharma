@@ -1,6 +1,7 @@
 import React from "react";
 import "./Product.css";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 function Product() {
   return (
@@ -39,7 +40,9 @@ function Product() {
                 </li>
               </ul>
             </div>
-            <button className="product__btn">Contact Us</button>
+            <Link to="/contact" className="product__btn">
+              Contact Us
+            </Link>
           </div>
           <div className="product__item">
             <div className="product__img">
@@ -69,7 +72,9 @@ function Product() {
                 </li>
               </ul>
             </div>
-            <button className="product__btn">Contact Us</button>
+            <Link to="/contact" className="product__btn">
+              Contact Us
+            </Link>
           </div>
           <div className="product__item">
             <div className="product__img">
@@ -87,7 +92,9 @@ function Product() {
                 </li>
               </ul>
             </div>
-            <button className="product__btn">Contact Us</button>
+            <Link to="/contact" className="product__btn">
+              Contact Us
+            </Link>
           </div>
           <div className="product__item">
             <div className="product__img">
@@ -108,7 +115,9 @@ function Product() {
                 </li>
               </ul>
             </div>
-            <button className="product__btn">Contact Us</button>
+            <Link to="/contact" className="product__btn">
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>

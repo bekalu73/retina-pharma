@@ -19,21 +19,25 @@ function Header() {
           </Link>
         </div>
         <div className={`header__links ${isOpen ? "header__links--open" : ""}`}>
-          <Link to="#" onClick={handleLinkClick} className="underlined">
+          <Link to="/" onClick={handleLinkClick} className="underlined">
             Home
           </Link>
           <Link to="/about" onClick={handleLinkClick} className="underlined">
             About
           </Link>
-          <Link to="#" onClick={handleLinkClick} className="underlined">
+          <Link
+            to="/customers"
+            onClick={handleLinkClick}
+            className="underlined"
+          >
             Customers
           </Link>
-          <Link to="#" onClick={handleLinkClick} className="underlined">
+          <Link to="/support" onClick={handleLinkClick} className="underlined">
             Technical Support
           </Link>
           <Link
             className="header__links-contact"
-            to="#"
+            to="/contact"
             onClick={handleLinkClick}
           >
             Contact Us

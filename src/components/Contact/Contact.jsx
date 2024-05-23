@@ -9,7 +9,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 function Contact() {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="contact__container">
         <h2>Contact Us</h2>
         <h5>Get In Touch</h5>
