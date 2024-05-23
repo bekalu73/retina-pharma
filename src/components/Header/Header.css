@@ -18,21 +18,18 @@
   background-color: #242033;
   color: white;
 }
+
 .header__logo {
   background-color: rgb(228, 174, 73);
   padding: 5px 10px;
   border-radius: 5px;
 }
+
 .header__logo img {
   width: 150px;
   object-fit: contain;
 }
-/* .header__links {
-  display: flex;
-  gap: 20px;
-  font-size: 20px;
-  padding: 10px 20px;
-} */
+
 .header__links {
   display: flex;
   align-items: center;
@@ -41,12 +38,13 @@
   padding: 10px 20px;
   transition: max-height 0.3s ease;
 }
+
 .header__links a:not(.header__links-contact) {
   position: relative;
-  /* color: white; */
   text-decoration: none;
-  padding: 10px 0;
+  padding: 10px 10px;
 }
+
 .header__links a:not(.header__links-contact):after {
   content: "";
   position: absolute;
@@ -66,6 +64,7 @@
   display: none;
   cursor: pointer;
 }
+
 .header__links--open {
   display: flex;
   flex-direction: column;
@@ -76,6 +75,7 @@
   background-color: #242033;
   z-index: 100;
 }
+
 .header__links-contact {
   background: rgb(63, 8, 99);
   background: linear-gradient(
@@ -86,7 +86,49 @@
   );
   padding: 5px 10px;
   border-radius: 5px;
-  /* color: #242033; */
+}
+
+.active {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Dropdown styles */
+.header__dropdown {
+  position: relative;
+}
+
+.dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #242033;
+  border: 1px solid #c84200;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+  width: 200px; /* Adjust width as needed */
+}
+
+.header__dropdown:hover .dropdown__menu {
+  display: flex;
+}
+
+.dropdown__menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown__menu a:hover {
+  background-color: #c84200;
+  color: #171325;
 }
 
 /* media query */
@@ -112,5 +154,16 @@
     padding: 10px;
     text-align: center;
     border-top: 1px solid #444;
+  }
+
+  .dropdown__menu {
+    position: relative;
+    top: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%; /* Make dropdown menu full width */
+  }
+  .header__dropdown .dropdown__menu {
+    display: none;
   }
 }
